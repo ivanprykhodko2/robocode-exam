@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css')}}">
+    <title>Document</title>
+</head>
+<body>
+        <form action="/register" method="POST" class="form_login">
+            <div class="sign_up-wrapper">
+                <i class="fas fa-times sign_up_form_close" id="sign_up_form_close"></i>
+                <div class="sign_up_form_text">
+                    Create a new accaunt<span class="red_exclamation">!</span>
+                </div>
+                <input type="text" placeholder="Username" class="sign_up_form_input" id="sign_up_username" name="username">
+                <input type="password" placeholder="Password" class="sign_up_form_input" id="sign_up_password" name="password">
+                <input type="password" placeholder="Confirm your password" class="sign_up_form_input" id="sign_up_confirm_password" nmae="confirm_password">
+                <input type="submit" value="Sign Up" class="sign_up_form_button" id="signUp_button">
+                <input type="submit" class="sign_up_field" id="sign_up_field_open" value="Log In"></input>
+            </div>
+        </form>
+</body>
+</html>
